@@ -11,8 +11,8 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 setup(
-    author="Will Keeling",
-    author_email='will@zifferent.com',
+    author="st1vms",
+    author_email='stefano.maria.salvatore@gmail.com',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
@@ -33,7 +33,7 @@ setup(
     include_package_data=True,
     python_requires='>=3.6',
     install_requires=[
-        'blinker>=1.4',
+        'blinker>=1.7.0', # Fixes blnker import error
         'brotli>=1.0.9',
         'certifi>=2019.9.11',
         "h2>=4.0; python_version>='3.6.0'",
@@ -79,7 +79,7 @@ setup(
     setup_requires=[],
     test_suite='tests.seleniumwire',
     tests_require=['pytest'],
-    url='https://github.com/wkeeling/selenium-wire',
+    url='https://github.com/st1vms/selenium-wire-fork',
     version='5.1.0',
     zip_safe=False,
 )
